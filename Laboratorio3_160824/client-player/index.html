@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #data-container {
+            margin-top: 20px;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        img {
+            width: 30px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        select, input, button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>PLAYERS</h1>
+    <input type="text" id="player-name" placeholder="Enter player name" />
+
+    <select id="player-move">
+        <option value="">Select your move</option>
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+    </select>
+    
+    <button id="fetch-button">Create Player</button>
+    <div id="data-container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
